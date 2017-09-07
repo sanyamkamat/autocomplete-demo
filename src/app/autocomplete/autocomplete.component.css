@@ -1,0 +1,17 @@
+.select-box-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+}
+
+.select-box-wrapper .list-group {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.select-box-wrapper .list-group-item-action:focus,
+.select-box-wrapper .list-group-item-action:hover {
+  background: #34d6e1;
+  color: white;
+}

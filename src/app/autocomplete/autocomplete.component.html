@@ -1,14 +1,12 @@
 <!-- TODO: Move inline styles to classes -->
-<div class="select-box-wrapper"
-     style="margin: 0 auto; width: 400px;position: relative">
+<div class="select-box-wrapper">
   <input class="form-control"
          id="autocomplete"
          [(ngModel)]="textEntered"
          [placeholder]="placeholder"
          (keyup)="filterList($event)">
   <ul class="list-group"
-      *ngIf="showFilteredList"
-      style="position: absolute; width: 100%; text-align: left;">
+      *ngIf="showFilteredList">
     <li class="list-group-item list-group-item-action"
         *ngFor="let item of filteredList; let i=index;"
         (click)="selectItem(i)"
